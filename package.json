@@ -1,6 +1,6 @@
 {
   "name": "ng-mat-daterange-picker",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "homepage": "https://github.com/phanikmr/ng-mat-daterange-picker",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "packagr": "rimraf dist && ng-packagr -p ng-package.json",
     "gh-build": "ng build --prod --output-path docs --base-href"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^9.0.6",
     "@angular/cdk": "^9.1.2",

@@ -1,0 +1,49 @@
+{
+  "name": "ng-mat-daterange-picker",
+  "version": "9.0.0",
+  "homepage": "https://github.com/phanikmr/ng-mat-daterange-picker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phanikmr/ng-mat-daterange-picker.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular9",
+    "ngx",
+    "material",
+    "angular-material",
+    "datepicker",
+    "daterange-picker",
+    "ngx-mat-daterange-picker",
+    "ng-mat-daterange-picker"
+  ],
+  "private": false,
+  "dependencies": {
+    "@angular/animations": "^9.0.6",
+    "@angular/cdk": "^9.1.2",
+    "@angular/common": "^9.0.6",
+    "@angular/compiler": "^9.0.6",
+    "@angular/core": "^9.0.6",
+    "@angular/forms": "^9.0.6",
+    "@angular/material": "^9.1.2",
+    "@angular/platform-browser": "^9.0.6",
+    "@angular/platform-browser-dynamic": "^9.0.6",
+    "core-js": "^2.4.1",
+    "rxjs": "^6.5.4",
+    "zone.js": "^0.10.2"
+  },
+  "main": "bundles/ng-mat-daterange-picker.umd.js",
+  "module": "fesm5/ng-mat-daterange-picker.js",
+  "es2015": "fesm2015/ng-mat-daterange-picker.js",
+  "esm5": "esm5/ng-mat-daterange-picker.js",
+  "esm2015": "esm2015/ng-mat-daterange-picker.js",
+  "fesm5": "fesm5/ng-mat-daterange-picker.js",
+  "fesm2015": "fesm2015/ng-mat-daterange-picker.js",
+  "typings": "ng-mat-daterange-picker.d.ts",
+  "metadata": "ng-mat-daterange-picker.metadata.json",
+  "sideEffects": false,
+  "peerDependencies": {
+    "tslib": "^1.10.0"
+  }
+}

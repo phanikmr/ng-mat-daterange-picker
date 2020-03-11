@@ -1,0 +1,13 @@
+import { animate, state, style, transition, trigger, group } from '@angular/animations';
+export const pickerOverlayAnimations = {
+    /** Transforms the height of the picker overlay content. */
+    transformPanel: trigger('transformPickerOverlay', [
+        state('void', style({ opacity: 0, transform: 'scale(1, 0)' })),
+        state('enter', style({ opacity: 1, transform: 'scale(1, 1)' })),
+        transition('void => enter', group([
+            animate('400ms cubic-bezier(0.25, 0.8, 0.25, 1)')
+        ])),
+        transition('* => void', animate('100ms linear', style({ opacity: 0 })))
+    ])
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGlja2VyLW92ZXJsYXkuYW5pbWF0aW9ucy5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLW1hdC1kYXRlcmFuZ2UtcGlja2VyLyIsInNvdXJjZXMiOlsic3JjL2FwcC9tb2R1bGVzL25neC1tYXQtZHJwL3BpY2tlci1vdmVybGF5L3BpY2tlci1vdmVybGF5LmFuaW1hdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUNMLE9BQU8sRUFDUCxLQUFLLEVBQ0wsS0FBSyxFQUNMLFVBQVUsRUFDVixPQUFPLEVBRVAsS0FBSyxFQUNOLE1BQU0scUJBQXFCLENBQUM7QUFFN0IsTUFBTSxDQUFDLE1BQU0sdUJBQXVCLEdBRWhDO0lBQ0YsMkRBQTJEO0lBQzNELGNBQWMsRUFBRSxPQUFPLENBQUMsd0JBQXdCLEVBQUU7UUFDaEQsS0FBSyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsRUFBQyxPQUFPLEVBQUUsQ0FBQyxFQUFFLFNBQVMsRUFBRSxhQUFhLEVBQUMsQ0FBQyxDQUFDO1FBQzVELEtBQUssQ0FBQyxPQUFPLEVBQUUsS0FBSyxDQUFDLEVBQUMsT0FBTyxFQUFFLENBQUMsRUFBRSxTQUFTLEVBQUUsYUFBYSxFQUFDLENBQUMsQ0FBQztRQUM3RCxVQUFVLENBQUMsZUFBZSxFQUFFLEtBQUssQ0FBQztZQUNoQyxPQUFPLENBQUMsd0NBQXdDLENBQUM7U0FDbEQsQ0FBQyxDQUFDO1FBQ0gsVUFBVSxDQUFDLFdBQVcsRUFBRSxPQUFPLENBQUMsY0FBYyxFQUFFLEtBQUssQ0FBQyxFQUFDLE9BQU8sRUFBRSxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUM7S0FDdEUsQ0FBQztDQUNILENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xyXG4gIGFuaW1hdGUsXHJcbiAgc3RhdGUsXHJcbiAgc3R5bGUsXHJcbiAgdHJhbnNpdGlvbixcclxuICB0cmlnZ2VyLFxyXG4gIEFuaW1hdGlvblRyaWdnZXJNZXRhZGF0YSxcclxuICBncm91cFxyXG59IGZyb20gJ0Bhbmd1bGFyL2FuaW1hdGlvbnMnO1xyXG5cclxuZXhwb3J0IGNvbnN0IHBpY2tlck92ZXJsYXlBbmltYXRpb25zOiB7XHJcbiAgcmVhZG9ubHkgdHJhbnNmb3JtUGFuZWw6IEFuaW1hdGlvblRyaWdnZXJNZXRhZGF0YTtcclxufSA9IHtcclxuICAvKiogVHJhbnNmb3JtcyB0aGUgaGVpZ2h0IG9mIHRoZSBwaWNrZXIgb3ZlcmxheSBjb250ZW50LiAqL1xyXG4gIHRyYW5zZm9ybVBhbmVsOiB0cmlnZ2VyKCd0cmFuc2Zvcm1QaWNrZXJPdmVybGF5JywgW1xyXG4gICAgc3RhdGUoJ3ZvaWQnLCBzdHlsZSh7b3BhY2l0eTogMCwgdHJhbnNmb3JtOiAnc2NhbGUoMSwgMCknfSkpLFxyXG4gICAgc3RhdGUoJ2VudGVyJywgc3R5bGUoe29wYWNpdHk6IDEsIHRyYW5zZm9ybTogJ3NjYWxlKDEsIDEpJ30pKSxcclxuICAgIHRyYW5zaXRpb24oJ3ZvaWQgPT4gZW50ZXInLCBncm91cChbXHJcbiAgICAgIGFuaW1hdGUoJzQwMG1zIGN1YmljLWJlemllcigwLjI1LCAwLjgsIDAuMjUsIDEpJylcclxuICAgIF0pKSxcclxuICAgIHRyYW5zaXRpb24oJyogPT4gdm9pZCcsIGFuaW1hdGUoJzEwMG1zIGxpbmVhcicsIHN0eWxlKHtvcGFjaXR5OiAwfSkpKVxyXG4gIF0pXHJcbn07XHJcbiJdfQ==
